@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Template Vue JS</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+</head>
+<body>
+    <h1>Hello Vue.js</h1>
+    <div id="app">
+        <button @click="toggleName">Show Name: {{ showName }}</button>
+        <button @click="toggleAge">Show Age: {{ showAge }}</button>
+        <p v-if="showName" >Welcome {{ name }}</p>
+        <p v-if="showAge" >your age is {{ age }}</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
