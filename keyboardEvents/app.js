@@ -1,7 +1,8 @@
 new Vue({
     el: "#app",
     data:{
-        name: "José"
+        name: "José",
+        lastName: "Gómez"
     },
     methods: {
         updateName(e){
